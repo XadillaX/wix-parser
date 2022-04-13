@@ -1,0 +1,29 @@
+{
+  "name": "wix-parser",
+  "version": "1.0.0",
+  "description": "Parser for *.wix files.",
+  "main": "lib/parser.js",
+  "typs": "index.d.ts",
+  "scripts": {
+    "postinstall": "rm -f package-lock.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XadillaX/wix-parser.git"
+  },
+  "keywords": [
+    "wix",
+    "mir2"
+  ],
+  "author": "XadillaX <i@233.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XadillaX/wix-parser/issues"
+  },
+  "homepage": "https://github.com/XadillaX/wix-parser#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "eslint": "^8.13.0",
+    "eslint-config-egg": "^11.0.1"
+  }
+}

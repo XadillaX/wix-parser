@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "eslint-config-egg"
+  ],
+  "rules": {
+    "max-len": [ "error", { "code": 80 } ]
+  },
+  "overrides": [{
+    "files": [
+      "*.d.ts"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "@typescript-eslint/ban-types": "off",
+      "@typescript-eslint/ban-ts-comment": "off"
+    },
+    "extends": [ "eslint-config-egg/typescript" ]
+  }]
+}
