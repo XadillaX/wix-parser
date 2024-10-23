@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/XadillaX/wix-parser#readme",
   "devDependencies": {
-    "@types/node": "^18.17.4",
+    "@types/node": "^18.19.59",
     "eslint": "^8.13.0",
     "eslint-config-egg": "^11.0.1"
   }
