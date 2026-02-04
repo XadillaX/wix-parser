@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-const { parse } = require('../lib/parser');
+const { parse } = require('../lib/index');
 
 (async () => {
   const filename = process.argv[2] || path.join(__dirname, 'ChrSel.WIX');

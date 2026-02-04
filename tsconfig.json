@@ -2,20 +2,18 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2020",
-    "lib": [
-      "es2020"
-    ],
-    "rootDir": "./",
+    "lib": ["es2020"],
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
     "strict": true,
-    "allowJs": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
-  "include": [
-    "lib",
-    "./"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
-  "compileOnSave": true
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib", "test", "example"]
 }

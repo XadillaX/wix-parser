@@ -1,11 +1,18 @@
 {
   "name": "wix-parser",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Parser for *.wix files.",
-  "main": "lib/parser.js",
-  "typs": "index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "postinstall": "rm -f package-lock.json"
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "test": "node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,8 +29,14 @@
   },
   "homepage": "https://github.com/XadillaX/wix-parser#readme",
   "devDependencies": {
-    "@types/node": "^18.17.4",
+    "@types/node": "^22.19.8",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.13.0",
-    "eslint-config-egg": "^11.0.1"
+    "eslint-config-egg": "^11.0.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

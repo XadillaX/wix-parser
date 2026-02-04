@@ -5,17 +5,31 @@
   "rules": {
     "max-len": [ "error", { "code": 80 } ]
   },
-  "overrides": [{
-    "files": [
-      "*.d.ts"
-    ],
-    "parserOptions": {
-      "project": "./tsconfig.json"
+  "overrides": [
+    {
+      "files": [ "src/**/*.ts" ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "plugins": [ "@typescript-eslint" ],
+      "rules": {
+        "strict": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "semi": "off",
+        "@typescript-eslint/semi": [ "error", "always" ],
+        "comma-dangle": "off",
+        "@typescript-eslint/comma-dangle": [ "error", "always-multiline" ],
+        "indent": "off",
+        "@typescript-eslint/indent": [ "error", 2 ]
+      }
     },
-    "rules": {
-      "@typescript-eslint/ban-types": "off",
-      "@typescript-eslint/ban-ts-comment": "off"
-    },
-    "extends": [ "eslint-config-egg/typescript" ]
-  }]
+    {
+      "files": [ "test/**/*.js" ],
+      "rules": {
+        "strict": "off"
+      }
+    }
+  ]
 }
