@@ -30,8 +30,8 @@
   "homepage": "https://github.com/XadillaX/wix-parser#readme",
   "devDependencies": {
     "@types/node": "^22.19.8",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.68.0",
+    "@typescript-eslint/parser": "^8.68.0",
     "eslint": "^8.13.0",
     "eslint-config-egg": "^11.0.1",
     "typescript": "^5.9.3"
