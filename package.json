@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/XadillaX/wix-parser#readme",
   "devDependencies": {
-    "@types/node": "^22.19.8",
+    "@types/node": "^24.13.3",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.13.0",
@@ -37,6 +37,6 @@
     "typescript": "^5.9.3"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=24.20.0"
   }
 }
